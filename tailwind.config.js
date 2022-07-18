@@ -1,10 +1,18 @@
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: ".5rem",
+    },
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [
+    require("tailwindcss-textshadow"),
+    require("tailwind-scrollbar-hide"),
+    require('tailwind-scrollbar'),
+  ],
+};
