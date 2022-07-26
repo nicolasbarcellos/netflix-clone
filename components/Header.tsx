@@ -19,8 +19,8 @@ function Header() {
         <Image
           src="/images/netflix-logo.svg"
           layout="fill"
-          // objectFit="cover"
-          className="cursor-pointer object-contain"
+          objectFit="contain"
+          className="cursor-pointer "
         />
       </div>
 
